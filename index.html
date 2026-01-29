@@ -7,50 +7,6 @@
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom Tailwind Configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#f0f4ff',
-                            100: '#e0e9ff',
-                            500: '#667eea',
-                            600: '#5568d3',
-                            700: '#764ba2',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <!-- Custom Styles -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-
-        .btn-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .btn-hover:hover {
-            transform: translateY(-2px);
-        }
-        
-        .btn-hover:active {
-            transform: translateY(0);
-        }
-        
-        .response-textarea {
-            font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
-        }
-    </style>
 </head>
 <body class="bg-gray-100 min-h-screen py-5 px-4">
     <div class="container mx-auto max-w-7xl">
@@ -97,7 +53,7 @@
                             </label>
                             <input 
                                 type="text" 
-                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors" 
+                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors" 
                                 id="idInstance" 
                                 placeholder="Enter idInstance"
                                 autocomplete="off"
@@ -109,7 +65,7 @@
                             </label>
                             <input 
                                 type="text" 
-                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors" 
+                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors" 
                                 id="apiToken" 
                                 placeholder="Enter ApiTokenInstance"
                                 autocomplete="off"
@@ -123,14 +79,14 @@
                         <div class="grid grid-cols-2 gap-3">
                             <button 
                                 type="button" 
-                                class="btn-hover bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg" 
+                                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all" 
                                 id="btnGetSettings"
                             >
                                 getSettings
                             </button>
                             <button 
                                 type="button" 
-                                class="btn-hover bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg" 
+                                class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all" 
                                 id="btnGetStateInstance"
                             >
                                 getStateInstance
@@ -148,7 +104,7 @@
                             <input 
                                 type="text" 
                                 id="messageChatId"
-                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors"
+                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                                 placeholder="77771234567 or 77771234567@c.us"
                                 autocomplete="off"
                             >
@@ -160,13 +116,13 @@
                             <textarea 
                                 id="messageText"
                                 rows="4"
-                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors resize-none"
+                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors resize-none"
                                 placeholder="Enter your message here..."
                             ></textarea>
                         </div>
                         <button 
                             type="button" 
-                            class="btn-hover bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg w-full" 
+                            class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg w-full transition-all" 
                             id="btnSendMessage"
                         >
                             sendMessage
@@ -183,7 +139,7 @@
                             <input 
                                 type="text" 
                                 id="fileChatId"
-                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors"
+                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                                 placeholder="77771234567 or 77771234567@c.us"
                                 autocomplete="off"
                             >
@@ -195,14 +151,14 @@
                             <input 
                                 type="url" 
                                 id="fileUrl"
-                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors"
+                                class="w-full px-4 py-2 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                                 placeholder="https://example.com/file.pdf"
                                 autocomplete="off"
                             >
                         </div>
                         <button 
                             type="button" 
-                            class="btn-hover bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg w-full" 
+                            class="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg w-full transition-all" 
                             id="btnSendFileByUrl"
                         >
                             sendFileByUrl
@@ -216,7 +172,7 @@
                     <div class="bg-gray-50 rounded-xl border-2 border-gray-200 overflow-hidden h-full">
                         <textarea 
                             id="response" 
-                            class="response-textarea w-full px-4 py-4 bg-gray-50 border-0 focus:outline-none focus:ring-0 text-sm h-full min-h-[600px]" 
+                            class="w-full px-4 py-4 bg-gray-50 border-0 focus:outline-none focus:ring-0 text-sm h-full min-h-[600px] font-mono" 
                             readonly 
                             placeholder="Method call results will be displayed here..."
                         ></textarea>
@@ -226,7 +182,7 @@
 
             <!-- Loading Indicator -->
             <div id="loading" class="hidden text-center mt-4">
-                <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500"></div>
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
                 <p class="mt-2 text-gray-600 font-medium">Loading...</p>
             </div>
 
