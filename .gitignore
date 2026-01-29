@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+dist/
+build/
+*.pdf
+extract_pdf*.py
+
+# Configuration files (can be regenerated)
+# js/config.js is auto-generated, but we keep it in git for default values
+
+# Credentials
+credentials.json
+config.json
+secrets.json
