@@ -92,10 +92,7 @@ The server automatically injects this value into the HTML page. If not set, it d
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## License
-
-MIT
+ 
 
 ---
 
